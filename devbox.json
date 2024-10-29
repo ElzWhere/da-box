@@ -1,0 +1,22 @@
+{
+    "packages": [
+        "python3",
+        "poetry",
+        "opentofu@1.6.2",
+        "google-cloud-sdk@475.0.0",
+        "tflint@0.50.3",
+        "terraform-docs@0.17.0",
+        "kustomize@5.4.1",
+        "_1password@2.28.0",
+
+
+    ],
+    "shell": {
+        "init_hook": [
+            "poetry shell",
+        ],
+        "scripts": {
+            "run_test": "pipenv run python main.py"
+        }
+    }
+}
